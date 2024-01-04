@@ -1,0 +1,61 @@
+.home-page {
+    h1 {
+        color: #fff;
+        font-size: 53px;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+
+        &::before {
+            content: '<h1>';
+            font-family: 'La Belle Aurore';
+            color: #ffd700;
+            font-size: 22px;
+            position: absolute;
+            margin-top: -40px;
+            left: -5px;
+            opacity: 1;
+            animation: fadeIn 1s 1.5s backwards;
+        }
+
+        &::after {
+            content: '</h1>';
+            font-family: 'La Belle Aurore';
+            color: #ffd700;
+            font-size: 22px;
+            position: absolute;
+            bottom: 9%;
+            left: -5px;
+            animation: fadeIn 1s 1.5s backwards;
+        }
+
+        img {
+            width: 40px;
+            margin-left: 20px;
+            opacity: 0;
+            height: 50px;
+            margin-top: 20px; // TODO: Letter P is not aligned with the rest of name
+            animation: rotateIn 1s linear both; //TODO: Explore other animations
+            animation-delay: 1.3s;
+           
+        }
+    }
+
+    h2 {
+        color: #8d8d8d;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 15px;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+
+    .text-zone {
+        position: absolute;
+        left: 20%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+    }
+}
