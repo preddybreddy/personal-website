@@ -2,6 +2,7 @@ import './index.scss'
 import Logo_p from '../../assets/images/icons8-letter-p-50.png'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect, useState } from 'react'
+import Loader from 'react-loaders'
 
 export default function Home() {
     function addAnimationDelay() {
@@ -26,13 +27,7 @@ export default function Home() {
     const nameArr = ['r', 'a', 'n', 'a', 'y']
     const jobTitleArr = ['S', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r']
     
-    // useEffect(() => {
-    //  setTimeout(() => {
-    //         //setLetterClass('text-animate-hover')
-    //         setLetterClass(letterClass)
-    //         //addAnimationDelay()
-    //     }, 4000)
-    // }, [])
+
     useEffect(() => {
         setTimeout(() => addAnimationDelay(), 1000)
     }, [])
@@ -46,22 +41,25 @@ export default function Home() {
     }, [])
 
     return (
-        <div className='container home-page'>
-            <div className='text-zone'>
-                <h1><span className={`${letterClass}`}>H</span>
-                    <span className={`${letterClass}`}>i</span>
-                    <span className={`${letterClass}`}>,</span>
-                    <br />
-                    <span className={`${letterClass}`}>I</span>
-                    <span className={`${letterClass}`}>'</span>
-                    <span className={`${letterClass}`}>m</span>
-                    <img src={Logo_p} alt="developer" />
-                    <AnimatedLetters letterClass={letterClass} strArray={nameArr} idx={7} />
-                    <br />
-                    <AnimatedLetters letterClass={letterClass} strArray={jobTitleArr} idx={12} />
-                </h1>
-                <h2>Full-stack developer / Software Architect</h2>
+        <>
+            <div className='container home-page'>
+                <div className='text-zone'>
+                    <h1><span className={`${letterClass}`}>H</span>
+                        <span className={`${letterClass}`}>i</span>
+                        <span className={`${letterClass}`}>,</span>
+                        <br />
+                        <span className={`${letterClass}`}>I</span>
+                        <span className={`${letterClass}`}>'</span>
+                        <span className={`${letterClass}`}>m</span>
+                        <img src={Logo_p} alt="developer" />
+                        <AnimatedLetters letterClass={letterClass} strArray={nameArr} idx={7} />
+                        <br />
+                        <AnimatedLetters letterClass={letterClass} strArray={jobTitleArr} idx={12} />
+                    </h1>
+                    <h2>Full-stack developer / Software Architect</h2>
+                </div>
             </div>
-        </div>
-    )   
+            {/* <Loader type="pacman"/> */}
+        </>
+    )       
 }
