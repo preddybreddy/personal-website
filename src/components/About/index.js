@@ -37,7 +37,7 @@ export default function About() {
                 <br />
                 <br />
                 <div className='subtext'>
-                    <em>*This website was built using technologies listed on the right.</em>
+                    <p><em>*This website was built using technologies listed on the right.</em></p>
                 </div>
             </div>
 

@@ -3,17 +3,17 @@ import Logo_P from '../../assets/images/icons8-letter-p-100.png'
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons'
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 export default function Sidebar() {
     return (
         <div className='nav-bar'>
-            <Link className='logo' to='/'>
-                <img src={Logo_P} alt='main-logo-P' />
-                <p className='sublogo'>Pranay Byreddy</p>
-                 
-            </Link>
+            <div className='img-sublogo'>
+                    <Link className='logo' to='/'>
+                        <img src={Logo_P} alt='main-logo-P' />
+                        <p className='sublogo'>Pranay Byreddy</p> 
+                    </Link>
+            </div>
             <nav>
                 <NavLink exact="true" activeclassname='active' to='/'>
                     <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
@@ -50,7 +50,7 @@ export default function Sidebar() {
                     rel="noreferrer"
                     href="https://youtube.com"
                     >
-                        <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
+                        <FontAwesomeIcon icon={faTwitter} color="#4d4d4e" />
                     </a>
                 </li>
             </ul>

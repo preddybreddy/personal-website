@@ -32,7 +32,10 @@
                 position: absolute;
                 margin-top: -20px;
                 left: -10px;
-                opacity: 0.8;
+                opacity: 0;
+                animation: bounceIn 1s 1s ;
+                animation-fill-mode: forwards;
+                
             }
 
             &::after {
@@ -44,7 +47,10 @@
                 left: -30px;
                 bottom: -20px;
                 margin-left: 20px;
-                opacity: 0.8;
+                opacity: 0;
+                animation: bounceIn 1s 1s ;
+                animation-fill-mode: forwards;
+                
             }
         }
 
@@ -59,8 +65,8 @@
             color: #fff;
             font-family: sans-serif;
             font-weight: 300;
-            opacity: 0;
             min-width: fit-content;
+            opacity: 0;
             animation: bounceIn 1s 1s ;
             animation-fill-mode: forwards;
             line-height: 150%;
@@ -71,6 +77,9 @@
 
             &:nth-of-type(2) {
                 animation-delay: 1.2s;
+            }
+            &:nth-of-type(3) {
+                animation-delay: 1.3s;
             }
         }
     }
@@ -90,6 +99,9 @@
     margin-left: 0;
     right: 0;
     overflow: hidden;
+    opacity: 0;
+    animation: bounceIn 1s 1s ;
+    animation-fill-mode: forwards;
 }
 
 .cubespinner {

@@ -16,9 +16,7 @@ export default function Home() {
     }
     function removeAnimationDelay() {
         const arr = document.querySelectorAll('.text-animate-hover')
-        console.log(arr)
         for (let i=0; i < arr.length; i++) {
-            console.log(i)
             arr[i].style["animation-delay"] = '0s'
         }
     }
