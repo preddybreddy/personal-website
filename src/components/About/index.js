@@ -1,5 +1,3 @@
-// TODO: Fix animation of paragraphs
-
 import './index.scss'
 import AnimatedLetters from '../AnimatedLetters'
 import { useEffect } from 'react'

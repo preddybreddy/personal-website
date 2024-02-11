@@ -28,15 +28,7 @@
             animation: fadeIn 1s 1.5s backwards;
         }
 
-        img {
-            width: 40px;
-            margin-left: 20px;
-            opacity: 0;
-            height: 50px;
-            margin-top: 20px; // TODO: Letter P is not aligned with the rest of name
-            animation: rotateIn 1s linear both; //TODO: Explore other animations
-            animation-delay: 1.3s;
-        }
+        
     }
 
     h2 {
@@ -52,9 +44,21 @@
     .text-zone {
         position: absolute;
         left: 20%;
-        top: 50%;
+        top: 70%;
         transform: translateY(-50%);
         width: 40%;
         max-height: 90%;
+
+        .img-letter-name {
+            display: inline-block;
+            position: relative;
+            top: 3.1px;
+            width: 48px;
+            margin-left: 20px;
+            opacity: 0;
+            height: 60px;
+            animation: rotateIn 1s linear both;
+            animation-delay: 1.3s ;
+        }
     }
 }

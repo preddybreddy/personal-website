@@ -1,3 +1,5 @@
+//TODO: Put Twitter link
+
 import './index.scss'
 import Logo_P from '../../assets/images/icons8-letter-p-100.png'
 import { Link, NavLink } from 'react-router-dom'

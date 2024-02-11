@@ -49,7 +49,9 @@ export default function Home() {
                         <span className={`${letterClass}`}>I</span>
                         <span className={`${letterClass}`}>'</span>
                         <span className={`${letterClass}`}>m</span>
-                        <img src={Logo_p} alt="developer" />
+                        <span className='img-letter-name'>
+                            <img src={Logo_p} alt="developer" />
+                        </span>
                         <AnimatedLetters letterClass={letterClass} strArray={nameArr} idx={7} />
                         <br />
                         <AnimatedLetters letterClass={letterClass} strArray={jobTitleArr} idx={12} />
